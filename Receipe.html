@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Recipe</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            background-color: rgb(87, 87, 132);
+            height: 40px;
+            
+
+            display: flex;
+            gap: 19px;
+            justify-content: end;
+            align-items: center;
+            padding-right: 15px;
+        }
+        a {
+            color: aliceblue;
+            text-decoration: none;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .Content {
+            padding: 18px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            width:1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 7px 1.5px rgb(106, 101, 101);
+            background-color: rgb(232, 229, 226);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .b img, .i img, .p img, .m img, .d img {
+            border: 1px solid black;
+            transition: transform 0.3s linear;
+        }
+        .b img:hover,.i img:hover ,.p img:hover ,.m img:hover,.d img:hover   {
+           transform: translateX(-50%);
+           box-shadow: 0px 0px 9px 4px black;
+        }
+        .Con4 {
+            display: none;
+            position: absolute;
+           top:37%;
+           overflow: scroll;
+            width: 240px;
+            height: 185px;
+            background-color: antiquewhite;
+         text-align: center;
+            box-shadow: 0px 0px 5px gray;
+          
+            border-radius: 5px;
+        }
+        .Con3{
+            display: none;
+            position: absolute;
+           top:9%;
+           left: 60%;
+           overflow: scroll;
+            width: 240px;
+            height: 185px;
+            background-color: antiquewhite;
+         text-align: center;
+            box-shadow: 0px 0px 5px gray;
+          
+            border-radius: 5px;
+        }
+        .Con2 {
+            display: none;
+            position: absolute;
+         
+           overflow: scroll;
+            width: 240px;
+            height: 185px;
+            background-color: antiquewhite;
+         text-align: center;
+            box-shadow: 0px 0px 5px gray;
+          
+            border-radius: 5px;
+        }
+        .Con {
+            display: none;
+            position: absolute;
+           top:9%;
+           overflow: scroll;
+            width: 240px;
+            height: 185px;
+            background-color: antiquewhite;
+         text-align: center;
+            box-shadow: 0px 0px 5px gray;
+          
+            border-radius: 5px;
+        }
+        .Con1{
+            display: none;
+            position: absolute;
+           top:63%;
+           overflow: scroll;
+            width: 240px;
+            height: 185px;
+            background-color: antiquewhite;
+         text-align: center;
+            box-shadow: 0px 0px 5px gray;
+          
+            border-radius: 5px;
+        }
+
+        .b:hover .Con,.i:hover .Con1 ,.p:hover .Con2 ,.m:hover .Con3 ,.d:hover .Con4 {
+            display: inline-block;
+        }
+        .m{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="#1">Blogs</a>
+            <a href="#2">About</a>
+            <a href="#3">Home</a>
+            <a href="#4">Login</a>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div class="Content">
+            <div class="b">
+                <img src="burger.jpg" width="300px" height="180px">
+                <div class="Con">
+                    <h1>Burger</h1>
+                    <h4>Ingredients:</h4>
+                    <p>Ground beef (or chicken, turkey, or plant-based alternative), salt, pepper, burger buns, lettuce, tomato, onion, mayonnaise, ketchup.</p>
+                </div>
+            </div>
+            <div class="d">
+                <img src="dosa.webp" width="300px" height="180px">
+                <div class="Con4">
+                    <h1>Dosa</h1>
+                    <h4>Ingredients:</h4>
+                    <p>Batter,salt.</p>
+                </div>
+            </div>
+            <div class="i">
+                <img src="ice.jpg" width="300px" height="180px">
+                <div class="Con1">
+                    <h1>Ice cream</h1>
+                    <h4>Ingredients:</h4>
+                    <p>Ground beef (or chicken, turkey, or plant-based alternative), salt, pepper, burger buns, lettuce, tomato, onion, mayonnaise, ketchup.</p>
+                </div>
+            </div>
+            <div class="p">
+                <img src="popcorn.jpg" width="300px" height="180px">
+                <div class="Con2">
+                    <h1>Popcorn</h1>
+                    <h4>Ingredients:</h4>
+                    <p>Ground beef (or chicken, turkey, or plant-based alternative), salt, pepper, burger buns, lettuce, tomato, onion, mayonnaise, ketchup.</p>
+                </div>
+            </div>
+            <div class="m">
+                <img src="meal.jpg" width="300px" height="180px">
+                <div class="Con3">
+                    <h1>Meal</h1>
+                    <h4>Ingredients:</h4>
+                    <p>Ground beef (or chicken, turkey, or plant-based alternative), salt, pepper, burger buns, lettuce, tomato, onion, mayonnaise, ketchup.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
